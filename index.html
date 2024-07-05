@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Daniel Garita Romero">
+    <meta name="description" content="Challenge: Alura Urban, propuesto por Alura LATAM como parte de la formación G6:ONE en colaboración con Oracle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Challenge: Alura Urban</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <img src="./images/header-logo.png" class="img-logo" alt="Hombre con sudadera y gorra gris" 
+           title="Alura Urban">
+
+      <h1 class="name-site">Alura Urban</h1>
+    </header>
+
+    <!-- Contenedor principal de productos y formulario de registro de nuevos productos -->
+    <main>
+      <!-- Contenedor de formulario para agregar nuevos productos -->
+      <section class="form-section">
+        <form data-formulario>
+          <h1 class="title-section">Agregar nuevo producto:</>
+
+          <div class="inputs-form-container">
+            <input type="text" class="input-form" placeholder="Nombre del producto" data-nombre required minlength="3" maxlength="20">
+            <input type="text" class="input-form" placeholder="Precio del producto (00.00)" data-precio required minlength="4" maxlength="15">
+            <input type="text" class="input-form" placeholder="URL de la imagen" data-imagen required minlength="20">
+          </div>
+
+          <div class="button-form-container">
+            <input class="button-form" type="submit" value="Agregar">
+            <input class="button-form" type="reset" value="Limpiar">
+          </div>
+        </form>
+      </section>
+
+      <!-- Contenedor de productos -->
+       <section class="product-section">
+        <h2 class="title-section">Mis productos:</h2>
+        
+        <ul class="cards-container" data-lista-productos>
+          <!-- 
+            ? Estructura semántica de las tarjetas de productos
+            <li class="product-card">
+              <img src="" class="img-product">
+
+              <div class="info-product">
+                <p class="attributes-product">NOMBRE__PRODUCTO</p>
+
+                <div class="price-delete-product">
+                  <p>PRECIO__PRODUCTO/p>
+
+                  <img src="./images/trash-product.png" alt="Eliminar producto" title="Eliminar producto"
+                      class="trash-icon" id="">
+                </div>
+              </div>
+            </li>
+          -->
+        </ul>
+       </section>
+    </main>
+
+    <!-- Pié de página -->
+    <footer>
+      <img src="./images/footer-logo.png" class="img-logo" alt="Hombre con máscara de gas" 
+           title="Alura Urban">
+      <h1 class="name-site">Alura Urban</h1>
+      <p>&#169; 2024 Brandon Daniel Garita Romero</p>
+
+      <div class="img-media">
+        <a href="https://github.com/danielGarita-MX?tab=repositories" target="_blank" 
+           title="GitHub">
+           <img src="./images/github.png" class="img-link" alt="Github">
+        </a>
+
+        <a href="https://www.linkedin.com/in/garita-romero-brandon-daniel-a305222b1" target="_blank" 
+           title="Linkedin">
+           <img src="./images/linkedin.png" class="img-link" alt="Linkedin">
+        </a>
+      </div>
+    </div>
+
+    </footer>
+
+    <script src="./scripts/readAPI.js" type="module"></script>
+    <script src="./scripts/createAPI.js" type="module"></script>
+    <script src="./scripts/deleteAPI.js" type="module"></script>
+  </body>
+</html>

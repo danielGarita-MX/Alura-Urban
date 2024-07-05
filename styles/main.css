@@ -1,0 +1,562 @@
+/* 
+  ! Hoja de estilos principal para la página de 'Alura Urban'
+*/
+
+/* 
+  ! Espacio para declarar las variables
+*/
+:root {
+  --header-bg-color: #5A5A5A; /* Color para el fondo del encabezado */
+  --shadow-color: #333; /* Color de sombra */
+  --border-color: #111; /* Color de borde */
+  --gold-color: #967B44; /* Color de sobra dorado */
+  --white-color: #FFF; /* Color blanco */
+  --background-button-clean: #c93e4a; /* Color para el botón de limpiar formulario */
+  --background-button-submit: #27187E; /* Color para el botón de enviar formulario */
+  --background-card: #C9C9C9; /* Color de fondo para las tarjetas de productos */
+}
+
+/*
+  ! Espacio para las tipografías a utilizar
+*/
+
+/* Tipografía para el encabezado */
+@font-face {
+  font-family: 'Murality';
+  src: url("../fonts/murality/MuralityBlack_PERSONAL_USE_ONLY.otf") format("opentype"),
+       url("../fonts/murality/MuralityOutline_PERSONAL_USE_ONLY.otf") format("opentype")
+       url("../fonts/murality/Murality_PERSONAL_USE_ONLY.otf") format("opentype"),;
+}
+
+/* Tipografía para titulos de las secciones */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/bebasneue/BebasNeue-Regular.eot") format("embedded-opentype"),
+       url("../fonts/bebasneue/BebasNeue-Regular.otf") format("opentype"),
+       url("../fonts/bebasneue/BebasNeue-Regular.ttf") format("truetype"),
+       url("../fonts/bebasneue/BebasNeue-Regular.woff") format("woff"),
+       url("../fonts/bebasneue/BebasNeue-Regular.woff2") format("woff2");
+}
+
+/* Tipografía para el pié de página */
+@font-face {
+  font-family: 'Murality Outline';
+  src: url("../fonts/murality/MuralityOutline_PERSONAL_USE_ONLY.otf") format("opentype"),
+       url("../fonts/murality/MuralityBlack_PERSONAL_USE_ONLY.otf") format("opentype"),
+       url("../fonts/murality/Murality_PERSONAL_USE_ONLY.otf") format("opentype"),;
+}
+
+/*
+  ! Estilos para la página
+*/
+
+/* Estilos para el encabezado de la página */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--header-bg-color);
+  width: 100vw;
+  margin-bottom: 2rem;
+}
+
+/* Logo principal de la página */
+.img-logo {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+/* Titulo de la página */
+.name-site {
+  font-size: 1.6rem;
+  font-family: 'Murality', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1.5px 1.5px #967B44;
+}
+
+/* Contenedor de formulario y productos */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 1.7rem;
+  box-sizing: border-box;
+  gap: 3.5rem;
+}
+
+/* Titulo de cada sección (formulario y productos= */
+.title-section {
+  font-family: 'Bebas Neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Contenedor de formulario */
+.inputs-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.8rem 0;
+}
+
+/* Entradas del formulario */
+.input-form {
+  align-self: center;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 2px 5px var(--shadow-color);
+  font-size: 1rem;
+  width: 98%;
+}
+
+/* Botones de formulario (colores para el botón de limpiar) */
+.button-form {
+  border-radius: 1rem;
+  width: 10rem;
+  height: 2.8rem;
+  background: var(--background-button-clean);
+  color: var(--white-color);
+  box-shadow: 2px 3px var(--shadow-color);
+  font-size: 1rem;
+}
+
+/* Botón de envio */
+.button-form:first-child {
+  margin-right: 0.5rem;
+  background: var(--background-button-submit);
+}
+
+/* Espacio para mostrar el error */
+.info-message {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen que acompaña al mensaje de error */
+.img-message {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Mensaje de error */
+.message {
+  font-size: 1.2rem;
+  color: var(--background-button-clean);
+}
+
+/* Contenedor para los productos */
+.cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Espacio para mostrar el producto (contenedor individual) */
+.product-card {
+  border: 3px solid var(--shadow-color);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: 48%;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+
+  background: var(--background-card);
+}
+
+/* Imagen del producto */
+.img-product {
+  border: 3px solid var(--shadow-color);
+  width: 100%;
+  height: 10rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.7rem var(--gold-color);
+}
+
+/* Contenedor de la información del producto */
+.info-product {
+  align-self: flex-start;
+  
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  flex: 1;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+/* Nombre y precio del producto */
+.attributes-product {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Contenedor del precio y botón de eliminar */
+.price-delete-product {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Icono para eliminar producto */
+.trash-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Pié de página */
+footer {
+  background: url("../images/background-footer.jpg");
+  max-width: 100vw;
+  padding: 1.2rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Logo para el pié de página */
+footer > .img-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Titulo del sitio */
+footer > .name-site {
+  color: var(--white-color);
+  text-shadow: none;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: 'Murality Outline', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Parráfo en el pié de página */
+footer > p {
+  color: var(--white-color);
+  font-size: 1rem;
+}
+
+/* Contenedor de enlaces a redes sociales */
+.img-media {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Imagen de enlace a redes sociales */
+.img-link {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+/*
+  ! Estilos responsivos
+*/
+
+/* Pantallas de 425px */
+@media (min-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* Entradas del formulario */
+  .input-form {
+    width: 85%;
+  }
+
+  /* Imagen del producto */
+  .img-product {
+    height: 12rem;
+  } 
+}
+
+/* Pantallas de 425px */
+@media (min-width: 425px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Botones de formulario (colores para el botón de limpiar) */
+  .button-form {
+    width: 8.5rem;
+    height: 2.4rem;
+  }
+}
+
+/* Pantallas de 768px */
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  /* Logo principal de la página */
+  .img-logo {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  /* Titulo de la página */
+  .name-site {
+    font-size: 2.3rem;
+  }
+
+  /* Titulo de cada sección (formulario y productos= */
+  .title-section {
+    font-size: 2rem;
+  }
+
+  /* Entradas del formulario */
+  .input-form {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  /* Botones de formulario (colores para el botón de limpiar) */
+  .button-form {
+    width: 14rem;
+    height: 3.2rem;
+    font-size: 1.1rem;
+  }
+
+  /* Botón de envio */
+  .button-form:first-child {
+    margin-right: 2.5rem;
+  }
+
+  /* Imagen que acompaña al mensaje de error */
+  .img-message {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* Mensaje de error */
+  .message {
+    font-size: 1.3rem;
+  }
+
+  /* Espacio para mostrar el producto (contenedor individual) */
+  .product-card {
+    width: 45%;
+    padding: 0.8rem;    
+  }
+
+  /* Imagen del producto */
+  .img-product {
+    height: 16rem;
+  }
+
+  /* Icono para eliminar producto */
+  .trash-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+
+/* Pantallas de 1024px */
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  /* Logo principal de la página */
+  .img-logo {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  /* Botones de formulario (colores para el botón de limpiar) */
+  .button-form {
+    width: 15.6rem;
+    height: 3rem;
+  }
+
+  /* Imagen del producto */
+  .img-product {
+    height: 20rem;
+  }
+
+  /* Icono para eliminar producto */
+  .trash-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
+
+
+/* Pantallas de 1200px */
+@media (min-width: 1200px) {
+  html {
+    font-size: 32px;
+  }
+
+  /* Estilos para el encabezado de la página */
+  header {
+    padding: 0.3rem;
+  }
+
+  /* Logo principal de la página */
+  .img-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  /* Titulo de la página */
+  .name-site {
+    font-size: 1.8rem;
+    text-shadow: 3.5px 3.5px #967B44;
+  }
+
+  /* Contenedor de formulario y productos */
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  /* Sección para el formulario */
+  .form-section{
+    width: 30%;
+  }
+
+  /* Sección para los productos */
+  .product-section {
+    width: 70%;
+  }
+
+  /* Titulo de cada sección (formulario y productos= */
+  .title-section {
+    font-size: 0.9rem;
+  }
+
+  /* Contenedor de formulario */
+  .inputs-form-container {
+    gap: 0.7rem;
+    margin: 2rem 0 0.7rem 0;
+  }
+
+  /* Entradas del formulario */
+  .input-form {
+    padding: 0.4rem;
+    font-size: 0.5rem;
+    box-shadow: 3px 5px var(--shadow-color);
+  }
+
+  /* Botones de formulario (colores para el botón de limpiar) */
+  .button-form {
+    transition: 0.5s;
+    border-radius: 0.4rem;
+    width: 4.2rem;
+    height: 1.2rem;
+    box-shadow: 3px 5px var(--shadow-color);
+    font-size: 0.5rem;
+  }
+
+  /* Botón de envio */
+  .button-form:first-child {
+    margin-right: 0.9rem;
+  }
+
+  /* Animación de los botones */
+  .button-form:hover {
+    transform: translateY(-0.1rem);
+    opacity: 0.8;
+  }
+
+  /* Contenedor para los productos */
+  .cards-container {
+    max-height: 24rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    gap: 0.3rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  /* Espacio para mostrar el producto (contenedor individual) */
+  .product-card {
+    border: 5px solid var(--shadow-color);
+    padding: 0.2rem;
+    width: 29%;
+    margin-bottom: 1rem;
+    gap: 0.3rem;
+  }
+
+  /* Imagen del producto */
+  .img-product {
+    border: 4px solid var(--shadow-color);
+    height: 5.5rem;
+    box-shadow: 0 0 0.8rem var(--gold-color);
+  }
+
+  /* Contenedor de la información del producto */
+  .info-product {
+    gap: 0.6rem;
+  }
+
+  /* Nombre y precio del producto */
+  .attributes-product {
+    font-size: 0.5rem;
+  }
+
+  /* Icono para eliminar producto */
+  .trash-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    transition: 0.5s;
+  }
+
+  /* Animación de botón de eliminar */
+  .trash-icon:hover {
+    transform: translateY(-0.1rem);
+    opacity: 0.8;
+  }
+
+  /* Pié de página */
+  footer {
+    padding: 0.7rem;
+    gap: 0.4rem;
+  }
+
+  footer > .img-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* Titulo del sitio */
+  footer > .name-site {
+    font-size: 0.5rem;
+  }
+
+  /* Parráfo en el pié de página */
+  footer > p {
+    font-size: 0.4rem;
+  }
+
+  /* Contenedor de enlaces a redes sociales */
+  .img-media {
+    gap: 2rem;
+  }
+
+  /* Imagen de enlace a redes sociales */
+  .img-link {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}

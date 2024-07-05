@@ -1,0 +1,12 @@
+/* 
+  ! Hoja de estilos que permite eliminar los estilos de página establecidos de manera predeterminada por los navegadores 
+*/
+
+html {font-size: 12px;font-family:"Ubuntu",sans-serif;overflow-x:hidden}
+
+*, *:after, *:before 
+{margin: 0;padding: 0;text-decoration: none;}
+     
+body{font-size: 100%;list-style-type: none;width: 100vw;overflow-x:hidden;}
+  
+li{list-style: none;}

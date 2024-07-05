@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": "ef83",
+      "nombre": "Gato",
+      "precio": "0.00",
+      "imagen": "https://cdn2.thecatapi.com/images/h0A4PuWV0.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Playera negra hombre",
+      "precio": "150.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7SKiEupGdtulUPLU9iqs6PZL4WU162dmavg&s"
+    },
+    {
+      "id": "3",
+      "nombre": "Sudadera gris hombre",
+      "precio": "350.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22rOQ7SNvwV4aSP2dZXyIxRMJbCQk3XoFjg&s"
+    },
+    {
+      "id": "4",
+      "nombre": "Gorra roja plana hombre",
+      "precio": "600.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSW0rzmifCe4XvQOZzvPmTS0HkLwE4nO3ow&s"
+    },
+    {
+      "id": "5",
+      "nombre": "Mochila azul hombre",
+      "precio": "500.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwWZ6ZZzp_WvxrdeKR475WRgzlpEjAkpKHpA&s"
+    },
+    {
+      "id": "6",
+      "nombre": "Cartera negra hombre",
+      "precio": "200.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jyVHN-5UI1pMVbVZPaG60hhqM_rNMGS4OQ&s"
+    },
+    {
+      "id": "c933",
+      "nombre": "Juego de esclavas mujer",
+      "precio": "1200.00",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4alBH0R7vkei2nR8t5-2MPoFZPcaejNWduA&s"
+    }
+  ]
+}
